@@ -1,0 +1,172 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "Solutech Global Consultancy",
+      "tone": "Professional, Trustworthy, Corporate, Efficient",
+      "target_audience": "SMBs, Startups, Freelancers, E-commerce Sellers",
+      "keywords": ["Compliance", "Growth", "Expertise", "Reliability"]
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Manrope, sans-serif",
+        "body": "Plus Jakarta Sans, sans-serif"
+      },
+      "weights": {
+        "headings": "700",
+        "subheadings": "600",
+        "body": "400"
+      },
+      "sizes": {
+        "h1": "text-5xl md:text-6xl tracking-tight leading-tight",
+        "h2": "text-3xl md:text-4xl tracking-tight",
+        "h3": "text-2xl font-semibold",
+        "body": "text-base md:text-lg leading-relaxed",
+        "small": "text-sm text-muted-foreground"
+      }
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "DEFAULT": "#0f172a",
+          "foreground": "#ffffff"
+        },
+        "secondary": {
+          "DEFAULT": "#f1f5f9",
+          "foreground": "#0f172a"
+        },
+        "accent": {
+          "DEFAULT": "#2563eb",
+          "foreground": "#ffffff",
+          "hover": "#1d4ed8"
+        },
+        "background": "#ffffff",
+        "surface": "#f8fafc",
+        "muted": "#94a3b8",
+        "border": "#e2e8f0"
+      },
+      "usage": {
+        "brand": "bg-primary text-primary-foreground",
+        "cta": "bg-accent hover:bg-accent-hover text-accent-foreground shadow-lg hover:shadow-xl transition-all",
+        "surface": "bg-surface border border-border"
+      }
+    },
+    "spacing": {
+      "container": "container mx-auto px-4 md:px-8 max-w-7xl",
+      "section_padding": "py-16 md:py-24",
+      "element_gap": "gap-8"
+    },
+    "layout": {
+      "grid_patterns": {
+        "hero": "grid grid-cols-1 lg:grid-cols-2 gap-12 items-center",
+        "services": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6",
+        "features": "grid grid-cols-1 md:grid-cols-3 gap-8",
+        "testimonials": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      },
+      "radius": "rounded-xl"
+    },
+    "visual_enhancers": {
+      "shadows": "shadow-sm hover:shadow-md transition-shadow duration-300",
+      "gradients": "bg-gradient-to-br from-slate-50 to-slate-100",
+      "borders": "border border-slate-200"
+    },
+    "accessibility": {
+      "focus_ring": "focus:ring-2 focus:ring-offset-2 focus:ring-accent",
+      "contrast_check": "Ensure text is slate-600 or darker on light backgrounds"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_main": {
+        "url": "https://images.pexels.com/photos/6930549/pexels-photo-6930549.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Solutech team collaborating in modern office",
+        "position": "Hero Section Right"
+      },
+      "services_bg": {
+        "url": "https://images.pexels.com/photos/6863260/pexels-photo-6863260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Financial documents and calculator workspace",
+        "position": "Services Section Background/Accent"
+      },
+      "about_team": {
+        "url": "https://images.unsplash.com/photo-1758518727707-b023e285b709?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBhY2NvdW50YW50JTIwdGVhbSUyMG1lZXRpbmclMjBtb2Rlcm4lMjBvZmZpY2V8ZW58MHx8fHwxNzcxNzcxMTYwfDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Professional team meeting",
+        "position": "About Section"
+      },
+      "trust_handshake": {
+        "url": "https://images.pexels.com/photos/33175650/pexels-photo-33175650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Business handshake close up",
+        "position": "Why Choose Us / Trust Section"
+      }
+    },
+    "icons": {
+      "library": "lucide-react",
+      "preferred_icons": [
+        "Calculator", "FileText", "Briefcase", "ShieldCheck", "Users", "BarChart", "Phone", "Mail", "CheckCircle"
+      ]
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "h-12 px-8 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors shadow-lg hover:shadow-blue-200/50",
+      "secondary": "h-12 px-8 rounded-lg bg-white text-slate-900 border border-slate-200 font-semibold hover:bg-slate-50 transition-colors",
+      "whatsapp": "h-12 px-8 rounded-lg bg-[#25D366] text-white font-semibold hover:bg-[#128C7E] transition-colors flex items-center gap-2 shadow-lg"
+    },
+    "cards": {
+      "service_card": "bg-white p-8 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group relative overflow-hidden",
+      "feature_card": "bg-slate-50 p-6 rounded-lg border border-slate-100"
+    },
+    "inputs": {
+      "base": "h-12 rounded-lg border-slate-200 bg-white focus:border-blue-500 focus:ring-blue-500"
+    }
+  },
+  "sections": {
+    "header": {
+      "layout": "Sticky, glassmorphism effect (bg-white/90 backdrop-blur-md)",
+      "elements": ["Logo (Text: Solutech)", "Nav Links", "CTA Button"]
+    },
+    "hero": {
+      "layout": "Two column: Text Left, Image Right",
+      "content": {
+        "headline": "Expert Financial Guidance for Your Business Growth",
+        "subhead": "Simplify your accounting, taxation, and compliance with Kolkata's most trusted consultancy.",
+        "ctas": ["Get Consultation", "Chat on WhatsApp"]
+      }
+    },
+    "services": {
+      "layout": "Grid 4 columns",
+      "items": [
+        {"title": "GST Services", "icon": "FileText", "desc": "Registration, filing, and compliance management."},
+        {"title": "Accounting", "icon": "Calculator", "desc": "End-to-end bookkeeping and financial reporting."},
+        {"title": "Income Tax", "icon": "BarChart", "desc": "Strategic tax planning and return filing."},
+        {"title": "Virtual Accountant", "icon": "Users", "desc": "Dedicated remote support for your daily finances."}
+      ]
+    },
+    "why_choose_us": {
+      "layout": "3 Column Feature Grid",
+      "features": [
+        {"title": "Expert Team", "desc": "Certified CAs and financial analysts."},
+        {"title": "Cost Effective", "desc": "Premium services at competitive rates."},
+        {"title": "100% Compliant", "desc": "Never miss a deadline or regulation."}
+      ]
+    },
+    "contact": {
+      "layout": "Split: Form Left, Contact Info Right",
+      "form_fields": ["Name", "Email", "Reason (Text)", "Service (Dropdown)"]
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install 'lucide-react' and 'framer-motion' if not present.",
+    "Use 'Manrope' for all Headings and 'Plus Jakarta Sans' for body text. Add these fonts via Google Fonts in index.html.",
+    "Implement smooth scrolling using CSS 'scroll-behavior: smooth'.",
+    "Ensure the Contact Form uses Shadcn Form components and has validation.",
+    "The WhatsApp button must open 'https://wa.me/<number>' in a new tab.",
+    "Use the specific image URLs provided in the assets section.",
+    "Do not use generic blue gradients. Use solid colors or very subtle mesh gradients.",
+    "Ensure high contrast for text (Slate-900 for headings, Slate-600 for body)."
+  ],
+  "universal_guidelines": [
+    "Do not use generic centered layouts everywhere. Use asymmetry.",
+    "Add micro-interactions to all buttons and cards (hover lift, color shift).",
+    "Use plenty of whitespace (padding-y-24 for sections).",
+    "Make sure the mobile view is optimized (stack columns, adjust text sizes)."
+  ]
+}
