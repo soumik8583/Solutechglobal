@@ -1,34 +1,74 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* Additional custom styles for Solutech website */
+
+/* Smooth scrolling behavior for entire document */
+html {
+    scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+/* Focus states for accessibility */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
+/* Custom selection color */
+::selection {
+    background-color: #2563eb;
     color: white;
 }
 
-.App-link {
-    color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+/* Loading animation for buttons */
+@keyframes spin {
     from {
         transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+/* Pulse animation for CTAs */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+}
+
+.pulse-hover:hover {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 640px) {
+    .container-custom {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .section-padding {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    .glass,
+    header,
+    .btn-primary,
+    .btn-whatsapp {
+        background: white !important;
+        color: black !important;
     }
 }
